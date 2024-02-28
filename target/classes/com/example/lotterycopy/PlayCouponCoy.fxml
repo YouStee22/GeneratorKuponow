@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.Reflection?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="420.0" prefWidth="560.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.lotterycopy.PlayGameController">
+   <children>
+      <BorderPane layoutX="-6.0" layoutY="-7.0" prefHeight="427.0" prefWidth="567.0" style="-fx-background-color: #006EB5;">
+         <top>
+            <HBox prefHeight="60.0" prefWidth="494.0" style="-fx-background-color: #092165;" BorderPane.alignment="CENTER">
+               <children>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <ImageView fitHeight="45.0" fitWidth="69.0" layoutX="11.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../icons/Play.png" />
+                           </image>
+                           <effect>
+                              <DropShadow />
+                           </effect>
+                        </ImageView>
+                        <Text fill="WHITE" layoutX="56.0" layoutY="42.0" opacity="0.87" strokeType="OUTSIDE" strokeWidth="0.0" text="GAME">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                           <effect>
+                              <DropShadow />
+                           </effect>
+                        </Text>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="60.0" prefWidth="487.0" />
+               </children>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </HBox>
+         </top>
+         <left>
+            <AnchorPane prefHeight="367.0" prefWidth="474.0" BorderPane.alignment="CENTER">
+               <children>
+                  <ImageView fitHeight="240.0" fitWidth="647.0" layoutX="8.0" layoutY="39.0" opacity="0.9" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../icons/game.png" />
+                     </image>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </ImageView>
+                  <TextField fx:id="txUp" editable="false" layoutX="79.0" layoutY="72.0" opacity="0.7" prefHeight="26.0" prefWidth="86.0" style="-fx-background-radius: 10; -fx-background-color: #70C7FF;">
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </TextField>
+                  <TextField fx:id="txUp2" editable="false" layoutX="173.0" layoutY="71.0" opacity="0.7" prefHeight="26.0" prefWidth="86.0" style="-fx-background-radius: 8; -fx-background-color: #70C7FF;">
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </TextField>
+                  <TextField fx:id="txUp3" editable="false" layoutX="267.0" layoutY="72.0" opacity="0.7" prefHeight="26.0" prefWidth="86.0" style="-fx-background-radius: 8; -fx-background-color: #70C7FF;">
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </TextField>
+                  <TextField fx:id="tx2" editable="false" layoutX="173.0" layoutY="121.0" prefHeight="76.0" prefWidth="86.0" style="-fx-background-radius: 8; -fx-background-color: #ADDCFB;">
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="tx3" editable="false" layoutX="268.0" layoutY="122.0" prefHeight="76.0" prefWidth="86.0" style="-fx-background-radius: 8; -fx-background-color: #ADDCFB;">
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="txDown" editable="false" layoutX="80.0" layoutY="224.0" opacity="0.7" prefHeight="20.0" prefWidth="84.0" style="-fx-background-radius: 8; -fx-background-color: #70C7FF;">
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </TextField>
+                  <TextField fx:id="txDown2" editable="false" layoutX="174.0" layoutY="224.0" opacity="0.7" prefHeight="20.0" prefWidth="85.0" style="-fx-background-radius: 8; -fx-background-color: #70C7FF;">
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </TextField>
+                  <TextField fx:id="txDown3" editable="false" layoutX="269.0" layoutY="224.0" opacity="0.7" prefHeight="20.0" prefWidth="84.0" style="-fx-background-radius: 8; -fx-background-color: #70C7FF;">
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </TextField>
+                  <Slider fx:id="startSlider" accessibleRole="DATE_PICKER" layoutX="434.0" layoutY="52.0" max="1.0" orientation="VERTICAL" prefHeight="219.0" prefWidth="25.0" showTickLabels="true" showTickMarks="true">
+                     <effect>
+                        <DropShadow height="65.22" radius="29.1625" spread="0.15" width="53.43">
+                           <color>
+                              <Color red="0.2554999887943268" green="0.5512138605117798" blue="0.7300000190734863" />
+                           </color>
+                        </DropShadow>
+                     </effect>
+                  </Slider>
+                  <Text layoutX="29.0" layoutY="311.0" strokeType="OUTSIDE" strokeWidth="0.0" text="RESULT - " wrappingWidth="106.10302734375">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                     <effect>
+                        <Reflection />
+                     </effect>
+                  </Text>
+                  <Text layoutX="38.0" layoutY="27.0" opacity="0.68" stroke="#754141" strokeType="OUTSIDE" strokeWidth="0.0" text="Coupon - ">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <effect>
+                        <Reflection />
+                     </effect>
+                  </Text>
+                  <Text fx:id="couponRaw" layoutX="121.0" layoutY="27.0" opacity="0.57" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="254.21630859375">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <effect>
+                        <Reflection />
+                     </effect>
+                  </Text>
+                  <Text fx:id="result" layoutX="143.0" layoutY="311.0" strokeType="OUTSIDE" strokeWidth="0.0" text="" wrappingWidth="268.21630859375">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                     <effect>
+                        <Reflection />
+                     </effect>
+                  </Text>
+                  <TextField fx:id="tx1" editable="false" layoutX="73.0" layoutY="123.0" prefHeight="76.0" prefWidth="89.0" style="-fx-background-radius: 8; -fx-background-color: #ADDCFB;">
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="DEFAULT" />
+                     </cursor>
+                  </TextField>
+                  <ImageView fx:id="im1" fitHeight="60.0" fitWidth="74.0" layoutX="88.0" layoutY="130.0" pickOnBounds="true" preserveRatio="true">
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                     <image>
+                        <Image url="@../../../icons/Apple.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="im2" fitHeight="60.0" fitWidth="74.0" layoutX="186.0" layoutY="129.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="file:/Users/tomek/Downloads/LotteryCopy/src/main/resources/icons/Cherry.png" />
+                     </image>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </ImageView>
+                  <ImageView fx:id="im3" fitHeight="60.0" fitWidth="74.0" layoutX="281.0" layoutY="130.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../icons/Cocktail.png" />
+                     </image>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </ImageView>
+                  <ImageView fx:id="im4" fitHeight="31.0" fitWidth="64.0" layoutX="90.0" layoutY="69.0" pickOnBounds="true" preserveRatio="true" />
+                  <ImageView fx:id="im5" fitHeight="31.0" fitWidth="64.0" layoutX="185.0" layoutY="69.0" pickOnBounds="true" preserveRatio="true" />
+                  <ImageView fx:id="im6" fitHeight="31.0" fitWidth="64.0" layoutX="279.0" layoutY="70.0" pickOnBounds="true" preserveRatio="true" />
+                  <ImageView fx:id="im7" fitHeight="31.0" fitWidth="64.0" layoutX="89.0" layoutY="222.0" pickOnBounds="true" preserveRatio="true" />
+                  <ImageView fx:id="im8" fitHeight="31.0" fitWidth="64.0" layoutX="185.0" layoutY="222.0" pickOnBounds="true" preserveRatio="true" />
+                  <ImageView fx:id="im9" fitHeight="31.0" fitWidth="64.0" layoutX="279.0" layoutY="222.0" pickOnBounds="true" preserveRatio="true" />
+                  <Line endY="299.0" layoutX="460.0" layoutY="35.0" startY="-32.0" stroke="#092165" strokeWidth="3.0">
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </Line>
+               </children>
+            </AnchorPane>
+         </left>
+         <bottom>
+            <AnchorPane prefHeight="36.0" prefWidth="564.0" style="-fx-background-color: #092165;" BorderPane.alignment="CENTER">
+               <children>
+                  <Button layoutX="460.0" layoutY="1.0" mnemonicParsing="false" onAction="#goBackButton" opacity="0.87" prefHeight="35.0" prefWidth="107.0" style="-fx-background-color: #092165;" text="Back" textFill="WHITE">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </Button>
+                  <ImageView fitHeight="24.0" fitWidth="42.0" layoutX="470.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../icons/Back.png" />
+                     </image>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </ImageView>
+               </children>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </AnchorPane>
+         </bottom>
+         <right>
+            <AnchorPane prefHeight="319.0" prefWidth="93.0" BorderPane.alignment="CENTER">
+               <children>
+                  <TextField fx:id="moneyDisplay" alignment="CENTER" layoutY="14.0" prefHeight="36.0" prefWidth="81.0" />
+                  <Button layoutX="-13.0" layoutY="65.0" mnemonicParsing="false" onAction="#addMoney" prefHeight="26.0" prefWidth="106.0" style="-fx-background-color: #092165;" stylesheets="@../../../style/styling.css" text="Add money" textFill="WHITE">
+                     <effect>
+                        <DropShadow>
+                           <color>
+                              <Color opacity="0.2045889049768448" />
+                           </color>
+                        </DropShadow>
+                     </effect>
+                  </Button>
+                  <Text fill="#fbff00" layoutX="23.0" layoutY="156.0" strokeType="OUTSIDE" strokeWidth="0.0" text="BANK">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </Text>
+                  <Text fx:id="money" fill="#fbff00" layoutY="180.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0000.00$" textAlignment="CENTER">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </Text>
+                  <Line endX="23.0" layoutX="56.0" layoutY="190.0" startX="-52.5" />
+                  <Text fx:id="moneyProcess" layoutX="5.0" layoutY="210.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="80.0" />
+                  <Text fx:id="moneyProcess2" layoutX="12.0" layoutY="227.0" opacity="0.8" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="66.21630859375" />
+                  <Text fx:id="moneyProcess3" layoutX="26.0" layoutY="242.0" opacity="0.6" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="65.21630859375" />
+                  <Button layoutX="-11.0" layoutY="285.0" mnemonicParsing="false" onAction="#playSuperGame" prefHeight="47.0" prefWidth="104.0" style="-fx-background-color: #90A601;" stylesheets="@../../../style/styling.css" text="SUPER GAME" textFill="WHITE">
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+         </right>
+      </BorderPane>
+   </children>
+</AnchorPane>

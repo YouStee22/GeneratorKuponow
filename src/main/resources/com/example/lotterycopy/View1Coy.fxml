@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="420.0" prefWidth="560.0" style="-fx-background-color: A4A4A4;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.lotterycopy.HelloController">
+   <children>
+      <BorderPane layoutX="-7.0" layoutY="-7.0" prefHeight="426.0" prefWidth="566.0">
+         <right>
+            <VBox prefHeight="372.0" prefWidth="174.0" style="-fx-background-color: #A6ACAF;" BorderPane.alignment="CENTER">
+               <children>
+                  <Button alignment="BASELINE_CENTER" graphicTextGap="10.0" mnemonicParsing="false" onAction="#goGameButton" prefHeight="57.0" prefWidth="179.0" stylesheets="@../../../style/styling.css" text="PLAY" textFill="WHITE">
+                     <graphic>
+                        <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../icons/Play.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#onButtonClick" prefHeight="50.0" prefWidth="174.0" stylesheets="@../../../style/styling.css" text="Generate" textFill="WHITE">
+                     <graphic>
+                        <TextField fx:id="QuantityOfCoupons" opacity="0.48" prefHeight="26.0" prefWidth="63.0">
+                           <effect>
+                              <DropShadow>
+                                 <color>
+                                    <Color red="1.0" green="1.0" blue="1.0" opacity="0.23202677071094513" />
+                                 </color>
+                              </DropShadow>
+                           </effect></TextField>
+                     </graphic>
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="TEXT" />
+                     </cursor>
+                  </Button>
+                  <VBox prefHeight="228.0" prefWidth="174.0" style="-fx-background-color: #465789;" />
+                  <Accordion />
+                  <Button fx:id="AdminButton" mnemonicParsing="false" onAction="#onAdminButtonClick" prefHeight="38.0" prefWidth="174.0" stylesheets="@../../../style/styling.css" text="Admin" textFill="WHITE">
+                     <graphic>
+                        <ImageView fitHeight="18.0" fitWidth="18.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../icons/Admin.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <effect>
+                        <DropShadow>
+                           <color>
+                              <Color opacity="0.4187380373477936" />
+                           </color>
+                        </DropShadow>
+                     </effect>
+                  </Button>
+               </children>
+            </VBox>
+         </right>
+         <top>
+            <HBox prefHeight="60.0" prefWidth="551.0" style="-fx-background-color: #092165;" BorderPane.alignment="CENTER">
+               <children>
+                  <AnchorPane prefHeight="59.0" prefWidth="150.0">
+                     <children>
+                        <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="24.0" layoutY="12.0" opacity="0.89" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../icons/Movie%20Ticket.png" />
+                           </image>
+                           <effect>
+                              <DropShadow>
+                                 <color>
+                                    <Color red="1.0" green="1.0" blue="1.0" opacity="0.5400000214576721" />
+                                 </color>
+                              </DropShadow>
+                           </effect>
+                        </ImageView>
+                        <Text fill="WHITE" layoutX="70.0" layoutY="40.0" opacity="0.8" strokeType="OUTSIDE" strokeWidth="0.0" text="LOTTERY" wrappingWidth="88.21630859375">
+                           <font>
+                              <Font size="21.0" />
+                           </font>
+                           <effect>
+                              <DropShadow radius="9.91" spread="0.16" width="20.64">
+                                 <color>
+                                    <Color red="1.0" green="1.0" blue="1.0" opacity="0.6214148998260498" />
+                                 </color>
+                              </DropShadow>
+                           </effect>
+                        </Text>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </HBox>
+         </top>
+         <center>
+            <SplitPane orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0" BorderPane.alignment="CENTER">
+              <items>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0" style="-fx-background-color: #B6B6B9;">
+                     <children>
+                        <Pane layoutX="8.0" layoutY="-1.0" prefHeight="363.0" prefWidth="383.0">
+                           <children>
+                              <ListView fx:id="DisplayView" layoutX="-2.0" layoutY="23.0" prefHeight="345.0" prefWidth="384.0" style="-fx-background-color: #E2E2E4;" />
+                              <Text layoutY="17.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Code   -" wrappingWidth="62.21630859375">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Text>
+                              <Text layoutX="54.0" layoutY="17.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Whether used  -">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Text>
+                              <Text layoutX="154.0" layoutY="17.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Whether win" wrappingWidth="74.046875">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Text>
+                              <Text layoutX="282.0" layoutY="17.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date of creation">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Text>
+                              <Line endX="279.0" layoutX="103.0" layoutY="23.0" startX="-105.0" />
+                           </children>
+                        </Pane>
+                     </children>
+                  </AnchorPane>
+              </items>
+            </SplitPane>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>
